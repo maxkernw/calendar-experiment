@@ -1,0 +1,5 @@
+<section>
+  <div *ngFor="let day of daysInMonth" class="calendartable">
+    <app-day (click)="selectedDate($event)" [date]="day"></app-day>
+  </div>
+</section>
